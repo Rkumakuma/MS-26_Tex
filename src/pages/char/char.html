@@ -5,15 +5,194 @@
   Ionic pages and navigation.
 -->
 <ion-header>
+  
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'],['\\(','\\)']],
+      processEscapes; true
+    },
+    CommonHTML: { matchFontHeight: false },
+    displayAlign: "left",
+    displayIndent: "2em"
+  });
+  </script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
   <ion-navbar>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Char</ion-title>
+    <ion-title>文字</ion-title>
   </ion-navbar>
 </ion-header>
 
 
 <ion-content padding>
+  <div class="b1">
 
+    <div class="menu">
+      <label for="Panel1">書体</label>
+      <input type="checkbox" id="Panel1" class="on-off" />
+      <ul>
+        <ion-grid>
+          <ion-row>
+            <ion-col col-7>
+        <ion-card>
+          <ion-card-content>
+            <table cellpadding="0" sellspacing="30" width="70%"><tbody>
+                <tr align="center">
+                  <td><img src="img/font/rm.PNG"/></td>
+                  <td><div class="b2" style="width:150px; margin: 3px 3px 3px 3px; padding:8px 10px 8px 10px">標準</div></td>
+                  <td>&#92;rm テキスト　Text</td>
+                </tr>
+                <tr align="center">
+                  <td><img src="img/font/gt.PNG"/></td>
+                  <td><div class="b2" style="width:150px; margin: 3px 3px 3px 3px; padding:8px 10px 8px 10px">ゴシック体</div></td>
+                  <td>&#92;gt テキスト　Text</td>
+                </tr>
+                <tr align="center">
+                  <td><img src="img/font/mc.PNG"/></td>
+                  <td><div class="b2" style="width:150px; margin: 3px 3px 3px 3px; padding:8px 10px 8px 10px">明朝体</div></td>
+                  <td>&#92;mc テキスト　Text</td>
+                </tr>
+                <tr align="center">
+                  <td><img src="img/font/it.PNG"/></td>
+                  <td><div class="b2" style="width:150px; margin: 3px 3px 3px 3px; padding:8px 10px 8px 10px">イタリック体</div></td>
+                  <td>&#92;it テキスト　Text</td>
+                </tr>
+                <tr align="center">
+                  <td><img src="img/font/sl.PNG"/></td>
+                  <td><div class="b2" style="width:150px; margin: 3px 3px 3px 3px; padding:8px 10px 8px 10px">斜体</div></td>
+                  <td>&#92;sl テキスト　Text</td>
+                </tr>
+                <tr align="center">
+                  <td><img src="img/font/bf.PNG"/></td>
+                  <td><div class="b2" style="width:150px; margin: 3px 3px 3px 3px; padding:8px 10px 8px 10px">ボールド体</div></td>
+                  <td>&#92;bf テキスト　Text</td>
+                </tr>
+                <tr align="center">
+                  <td><img src="img/font/tt.PNG"/></td>
+                  <td><div class="b2" style="width:150px; margin: 3px 3px 3px 3px; padding:8px 10px 8px 10px">タイプライタ体</div></td>
+                  <td>&#92;tt テキスト　Text</td>
+                </tr>
+                <tr align="center">
+                  <td><img src="img/font/sf.PNG"/></td>
+                  <td><div class="b2" style="width:150px; margin: 3px 3px 3px 3px; padding:8px 10px 8px 10px">サンセリフ体</div></td>
+                  <td>&#92;sf テキスト　Text</td>
+                </tr>
+                <tr align="center">
+                  <td><img src="img/font/sc.PNG"/></td>
+                  <td><div class="b2" style="width:150px; margin: 3px 3px 3px 3px; padding:8px 10px 8px 10px">スモールキャプス体</div></td>
+                  <td>&#92;sc テキスト　Text</td>
+                </tr>
+              </tbody></table>
+          </ion-card-content>
+        </ion-card>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ul>
+
+      <label for="Panel12">文字サイズ</label>
+      <input type="checkbox" id="Panel12" class="on-off" />
+      <ul>
+        <ion-grid><ion-row><ion-col col-7>
+          <ion-card>
+            <ion-card-content>
+                <table cellpadding="0" sellspacing="30"><tbody>
+                  
+                </tbody></table>
+            </ion-card-content>
+          </ion-card>
+        </ion-col></ion-row></ion-grid>
+      </ul>
+
+      <label for="Panel13">ギリシャ文字</label>
+      <input type="checkbox" id="Panel13" class="on-off" />
+      <ul>
+        <ion-grid><ion-row><ion-col col-7>
+          <ion-card>
+            <ion-card-content>
+                <table cellpadding="0" sellspacing="30"><tbody>
+                  <tr align="center">
+                    <td><img src="img/greece/alpha.png"/></td>
+                    <td>A  /  &#92;alpha</td>
+                    <td><img src="img/greece/beta.png"/></td>
+                    <td>B  /  &#92;beta</td>
+                  </tr>
+                  <tr align="center">
+                      <td><img src="img/greece/gamma.png"/></td>
+                      <td>&#92;Gamma  /  &#92;gamma</td>
+                      <td><img src="img/greece/delta.png"/></td>
+                      <td>&#92;Delta  /  &#92;delta</td>
+                  </tr>
+                  <tr align="center">
+                      <td><img src="img/greece/epsilon.png"/></td>
+                      <td>E  /  &#92;epsilon  /  &#92;varepsilon</td>
+                      <td><img src="img/greece/zeta.png"/></td>
+                      <td>Z  /  &#92;zeta</td>
+                  </tr>
+                  <tr align="center">
+                      <td><img src="img/greece/eta.png"/></td>
+                      <td>H  /  &#92;eta</td>
+                      <td><img src="img/greece/theta.png"/></td>
+                      <td>&#92;Theta  /  &#92;theta  /  &#92;vartheta</td>
+                  </tr>
+                  <tr align="center">
+                      <td><img src="img/greece/iota.png"/></td>
+                      <td>I  /  &#92;iota</td>
+                      <td><img src="img/greece/kappa.png"/></td>
+                      <td>K  /  &#92;kappa</td>
+                  </tr>
+                  <tr align="center">
+                      <td><img src="img/greece/lambda.png"/></td>
+                      <td>&#92;Lambda  /  &#92;lambda</td>
+                      <td><img src="img/greece/mu.png"/></td>
+                      <td>M  /  &#92;mu</td>
+                  </tr>
+                  <tr align="center">
+                      <td><img src="img/greece/nu.png"/></td>
+                      <td>N  /  &#92;nu</td>
+                      <td><img src="img/greece/xi.png"/></td>
+                      <td>&#92;Xi  /  &#92;xi</td>
+                  </tr>
+                  <tr align="center">
+                      <td><img src="img/greece/o.png"/></td>
+                      <td>O  /  o</td>
+                      <td><img src="img/greece/pi.png"/></td>
+                      <td>&#92;Pi  /  &#92;pi</td>
+                  </tr>
+                  <tr align="center">
+                      <td><img src="img/greece/rho.png"/></td>
+                      <td>P  /  &#92;rho</td>
+                      <td><img src="img/greece/sigma.png"/></td>
+                      <td>&#92;Sigma  /  &#92;sigma  /  &#92;varsigma</td>
+                  </tr>
+                  <tr align="center">
+                      <td><img src="img/greece/tau.png"/></td>
+                      <td>T  /  &#92;tau</td>
+                      <td><img src="img/greece/upsilon.png"/></td>
+                      <td>&#92;Upsilon  /  &#92;upsilon</td>
+                  </tr>
+                  <tr align="center">
+                      <td><img src="img/greece/phi.png"/></td>
+                      <td>&#92;Phi  /  &#92;phi  /  &#92;verphi</td>
+                      <td><img src="img/greece/chi.png"/></td>
+                      <td>X  /  &#92;chi</td>
+                  </tr>
+                  <tr align="center">
+                      <td><img src="img/greece/psi.png"/></td>
+                      <td>&#92;Psi  /  &#92;psi</td>
+                      <td><img src="img/greece/omega.png"/></td>
+                      <td>&#92;Omega  /  &#92;omega</td>
+                  </tr>
+                </tbody></table>
+            </ion-card-content>
+          </ion-card>
+        </ion-col></ion-row></ion-grid>
+      </ul>
+    </div>
+
+  </div>
 </ion-content>
